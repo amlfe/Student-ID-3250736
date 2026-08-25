@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Automobile Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .car-section {
+            background-color: #ffffff;
+            padding: 30px;
+            margin-bottom: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        /* CSS Hover Effect */
+        .car-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        h2 {
+            font-size: 32px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #111827;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        /* CSS pseudo-element for a modern underline effect */
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: #3b82f6;
+            border-radius: 2px;
+        }
+        p {
+            font-size: 15px;
+            text-align: justify;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+        em {
+            font-style: italic;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+        .img-container {
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        /* CSS Zoom Effect on Image Hover */
+        .car-section:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Distinct Background Colors for Each Paragraph Text Block */
+        .mercedes-block { 
+            background-color: #f0f4f8; 
+            color: #1e3a8a; 
+            border-left: 5px solid #3b82f6;
+        }
+        .toyota-block { 
+            background-color: #f0fdf4; 
+            color: #14532d; 
+            border-left: 5px solid #22c55e;
+        }
+        .ferrari-block { 
+            background-color: #fef2f2; 
+            color: #7f1d1d; 
+            border-left: 5px solid #ef4444;
+        }
+        .ford-block { 
+            background-color: #fffbeb; 
+            color: #78350f; 
+            border-left: 5px solid #f59e0b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Car 1 -->
+    <div class="car-section">
+        <h2>1. Mercedes-Benz S-Class (Germany)</h2>
+        <p class="mercedes-block">
+            The Mercedes-Benz S-Class represents a global symbol of <em>absolute luxury</em> and sophisticated German engineering for many decades. 
+            This vehicle seamlessly combines exceptional cabin comfort with revolutionary technological innovations that constantly redefine <em>intelligent driving</em> ecosystems. 
+            Manufactured in Germany, it delivers a precise driving experience blending powerful performance with top-tier safety standards for executives worldwide.
+        </p>
+        <div class="img-container">
+            <img src="https://unsplash.com" alt="Mercedes S Class">
+        </div>
+    </div>
+
+    <!-- Car 2 -->
+    <div class="car-section">
+        <h2>2. Toyota Land Cruiser (Japan)</h2>
+        <p class="toyota-block">
+            The Toyota Land Cruiser stands as a living <em>Japanese legend</em> within the realm of heavy-duty four-wheel-drive off-road machinery. 
+            The vehicle boasts a legendary reputation for bulletproof reliability and an immense capability to endure the harshest <em>climatic conditions</em> and terrains. 
+            It embodies the meticulous nature of Japanese manufacturing by offering massive interior spaces and advanced drivetrain layouts to protect passengers.
+        </p>
+        <div class="img-container">
+            <img src="https://unsplash.com" alt="Toyota Land Cruiser">
+        </div>
+    </div>
+
+    <!-- Car 3 -->
+    <div class="car-section">
+        <h2>3. Ferrari SF90 (Italy)</h2>
+        <p class="ferrari-block">
+            Arriving straight from the heart of Italy, the Ferrari SF90 completely reimagines the traditional <em>supercar concept</em> using advanced plug-in hybrid technology. 
+            The vehicle seamlessly blends a potent internal combustion engine with three electric motors to unleash an <em>exhilarating acceleration</em> curve on race tracks. 
+            Both exterior lines and cockpit layouts reflect the pure Italian passion for artistic elegance, automotive speed, and aerodynamic perfection.
+        </p>
+        <div class="img-container">
+            <img src="https://unsplash.com" alt="Ferrari SF90">
+        </div>
+    </div>
+
+    <!-- Car 4 -->
+    <div class="car-section">
+        <h2>4. Ford Mustang (United States)</h2>
+        <p class="ford-block">
+            The Ford Mustang remains the most celebrated American icon in the famous <em>muscle car</em> segment, representing automotive freedom and raw performance. 
+            The vehicle is instantly recognized by its roaring engine rumble and an aggressive styling profile that evolves while keeping its <em>enthusiastic sportiness</em> intact. 
+            Built in America, it delivers a unique mixture of heritage and modern features that make it highly desired by enthusiasts across the globe.
+        </p>
+        <div class="img-container">
+            <img src="https://unsplash.com" alt="Ford Mustang">
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

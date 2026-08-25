@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        td img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fruits Directory</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Origin Country</th>
+                <th>Taste</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://unsplash.com" alt="Banana"></td>
+                <td>Banana</td>
+                <td>Yellow</td>
+                <td>Southeast Asia</td>
+                <td>Sweet and creamy</td>
+            </tr>
+            <tr>
+                <td><img src="https://unsplash.com" alt="Apple"></td>
+                <td>Apple</td>
+                <td>Red / Green / Yellow</td>
+                <td>Central Asia</td>
+                <td>Sweet or tart and crunchy</td>
+            </tr>
+            <tr>
+                <td><img src="https://unsplash.com" alt="Orange"></td>
+                <td>Orange</td>
+                <td>Orange</td>
+                <td>China</td>
+                <td>Citrusy and sweet</td>
+            </tr>
+            <tr>
+                <td><img src="https://unsplash.com" alt="Strawberry"></td>
+                <td>Strawberry</td>
+                <td>Red</td>
+                <td>Europe</td>
+                <td>Sweet and slightly tart</td>
+            </tr>
+            <tr>
+                <td><img src="https://unsplash.com" alt="Mango"></td>
+                <td>Mango</td>
+                <td>Yellow / Orange</td>
+                <td>India</td>
+                <td>Sweet and tropical</td>
+            </tr>
+            <tr>
+                <td><img src="https://unsplash.com" alt="Grape"></td>
+                <td>Grape</td>
+                <td>Green / Red / Black</td>
+                <td>Mediterranean</td>
+                <td>Sweet and juicy</td>
+            </tr>
+            <tr>
+                <td><img src="https://unsplash.com" alt="Watermelon"></td>
+                <td>Watermelon</td>
+                <td>Green outside / Red inside</td>
+                <td>Africa</td>
+                <td>Sweet and refreshing</td>
+            </tr>
+            <tr>
+                <td><img src="https://unsplash.com" alt="Pineapple"></td>
+                <td>Pineapple</td>
+                <td>Golden / Yellow</td>
+                <td>South America</td>
+                <td>Sweet and tangy</td>
+            </tr>
+            <tr>
+                <td><img src="https://unsplash.com" alt="Pear"></td>
+                <td>Pear</td>
+                <td>Green / Yellow</td>
+                <td>Europe</td>
+                <td>Sweet and soft</td>
+            </tr>
+            <tr>
+                <td><img src="https://unsplash.com" alt="Peach"></td>
+                <td>Peach</td>
+                <td>Pinkish Yellow</td>
+                <td>China</td>
+                <td>Sweet and aromatic</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

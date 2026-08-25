@@ -1,0 +1,128 @@
+// ==========================================
+// Simple To-Do List Management System
+// ==========================================
+
+// 1. Empty array to store tasks
+let todoList = [];
+
+// 2. Function to add a new task
+function addTask(taskName) {
+    if (taskName === "") {
+        console.log("❌ Error: Cannot add an empty task!");
+        return;
+    }
+    
+    // Create a task object
+    let task = {
+        id: todoList.length + 1,
+        name: taskName,
+        completed: false
+    };
+    
+    // Push the task into the array
+    todoList.push(task);
+    console.log(`✅ Task added successfully: "${taskName}"`);
+}
+
+// 3. Function to display all tasks
+function showTasks() {
+    console.log("\n--- Current Task List ---");
+    
+    if (todoList.length === 0) {
+        console.log("📭 The list is currently empty.");
+        return;
+    }
+    
+    // Loop through each task and print it
+    for (let i = 0; i < todoList.length; i++) {
+        let task = todoList[i];
+        let status = task.completed ? "[Completed]" : "[Pending]";
+        console.log(`${task.id}. ${task.name} - ${status}`);
+    }
+    console.log("---------------------------\n");
+}
+
+// 4. Function to mark a task as completed
+function completeTask(taskId) {
+    let found = false;
+    
+    for (let i = 0; i < todoList.length; i++) {
+        if (todoList[i].id === taskId) {
+            todoList[i].completed = true;
+            console.log(`🎉 Good job! Task completed: "${todoList[i].name}"`);
+            found = true;
+            break;
+        }
+    }
+    
+    if (!found) {
+        console.log(`❌ Error: Task with ID (${taskId}) was not found.`);
+    }
+}
+
+// 5. Function to delete a specific task
+function deleteTask(taskId) {
+    let initialLength = todoList.length;
+    
+    // Filter the array to remove the matching task ID
+    todoList = todoList.filter(task => task.id !== taskId);
+    
+    if (todoList.length < initialLength) {
+        console.log(`🗑️ Task ID (${taskId}) was deleted successfully.`);
+    } else {
+        console.log(`❌ Error: Task ID (${taskId}) does not exist.`);
+    }
+}
+
+// 6. Function to display quick statistics
+function showStats() {
+    let total = todoList.length;
+    let completedCount = 0;
+    
+    for (let i = 0; i < todoList.length; i++) {
+        if (todoList[i].completed === true) {
+            completedCount++;
+        }
+    }
+    
+    let pending = total - completedCount;
+    
+    console.log("\n📊 Task Statistics:");
+    console.log(`- Total Tasks: ${total}`);
+    console.log(`- Completed Tasks: ${completedCount}`);
+    console.log(`- Pending Tasks: ${pending}\n`);
+}
+
+
+// ==========================================
+// System Testing and Execution
+// ==========================================
+
+console.log("🚀 Starting the To-Do List Application...");
+
+// Adding new tasks
+addTask("Buy groceries from the supermarket");
+addTask("Read 10 pages of a book");
+addTask("Exercise for 30 minutes");
+addTask(""); // Testing empty input error validation
+
+// Show tasks after addition
+showTasks();
+
+// Changing task status to completed
+completeTask(1);
+completeTask(3);
+completeTask(99); // Testing non-existent ID error validation
+
+// Show tasks after updates
+showTasks();
+
+// Show statistics
+showStats();
+
+// Deleting a task
+deleteTask(2);
+
+// Final list display
+showTasks();
+console.log("🏁 Application execution finished.");

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lessons Implementation up to ID</title>
+    <style>
+        /* CSS Styling for the Class and ID lessons */
+        .highlight-text {
+            color: blue;
+            font-weight: bold;
+        }
+        #special-section {
+            background-color: #f0f0f0;
+            border-left: 5px solid #04AA6D;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Headings Lesson -->
+    <h1>Main Heading (h1)</h1>
+    <h2>Subheading (h2)</h2>
+
+    <!-- 2. Paragraphs and Elements Lesson -->
+    <p>This is a standard paragraph element representing block-level text.</p>
+
+    <!-- 3. Text Formatting Lesson -->
+    <p>We can make text <b>bold</b>, <strong>strong</strong>, <i>italic</i>, <em>emphasized</em>, or <mark>highlighted</mark>.</p>
+
+    <!-- 4. Links Lesson (with target attribute) -->
+    <p>Visit the official website: <a href="https://w3schools.com" target="_blank">Go to W3Schools</a></p>
+
+    <!-- 5. Images Lesson (with src, alt, width, and height attributes) -->
+    <h2>Images</h2>
+    <img src="https://w3schools.com/images/w3schools_green.jpg" alt="W3Schools Logo" width="150" height="150">
+
+    <!-- 6. Lists Lesson (Unordered and Ordered) -->
+    <h2>Lists</h2>
+    <ul>
+        <li>First item in an unordered list</li>
+        <li>Second item in an unordered list</li>
+    </ul>
+
+    <ol>
+        <li>First step in an ordered list</li>
+        <li>Second step in an ordered list</li>
+    </ol>
+
+    <!-- 7. Styles and Classes Lesson -->
+    <h2>Styles and Classes</h2>
+    <p style="color: red; font-size: 18px;">This paragraph uses inline styles.</p>
+    <p class="highlight-text">This paragraph uses a CSS class for styling.</p>
+
+    <!-- 8. ID Attribute Lesson -->
+    <div id="special-section">
+        <h3>ID Attribute Lesson</h3>
+        <p>This container has a unique ID attribute. IDs are unique and used to target a specific single element for styling or JavaScript.</p>
+    </div>
+
+</body>
+</html>
